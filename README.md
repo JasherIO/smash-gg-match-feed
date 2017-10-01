@@ -17,7 +17,7 @@ timer: How often you would like to scrape (in seconds). Defaults to 5 seconds.
 
 ## Examples
 
-#### Single-Stage Tournament**
+#### Single-Stage Tournament
 
 Short URL: `python driver.py https://smash.gg/nxs-3v3-sat-36/events`  
 Long URL: `python driver.py https://smash.gg/tournament/nexus-gaming-saturday-150-na-3v3-weekly-tournament-36/details`  
