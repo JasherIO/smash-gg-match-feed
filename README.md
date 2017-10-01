@@ -10,10 +10,10 @@ Scrapes the passed in Smash.gg tournament URL every X seconds for all played set
 
 # Usage
 
-`python scraper.py tournament-url [timer]`
+`python scraper.py tournament-url [interval]`
 
-tournament-url: The Smash.gg tournament you wish to scrape sets from.
-timer: How often you would like to scrape (in seconds). Defaults to 5 seconds. 
+tournament-url: The Smash.gg tournament you wish to scrape sets from.  
+interval: How often you would like to scrape (in seconds). Defaults to 5 seconds.  
 
 ## Examples
 
