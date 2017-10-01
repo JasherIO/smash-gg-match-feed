@@ -4,6 +4,7 @@
 
 import requests
 import json
+import sys
 
 import parser
 
@@ -14,6 +15,10 @@ def phases(slug):
 
   r = requests.get(url)
   tournament = json.loads(r.text)
+
+  if (r.status_code != 200):
+    print 'Error: tournament "{}" invalid'.format(slug)
+    sys.exit()
 
   phases = {}
   parsed = parser.phases(tournament['entities']['phase'])
@@ -36,6 +41,10 @@ def sets(groupId):
 
   url = base + str(groupId) + expands
   r = requests.get(url)
+
+  if (r.status_code != 200):
+    print 'Error: group "{}" invalid'.format(groupId)
+    sys.exit()
 
   group = json.loads(r.text)
 

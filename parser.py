@@ -41,7 +41,7 @@ def sets(data, entrants):
     entrant1Name = entrants[entrant1Id]
     entrant2Name = entrants[entrant2Id]
 
-    match = entrant1Name + ' ' + entrant1Score + '-' + entrant2Score + ' ' + entrant2Name
+    match = '{} {}-{} {}'.format(entrant1Name, entrant1Score, entrant2Score, entrant2Name)
     if round not in sets:
       sets[round] = [match]
     else:
